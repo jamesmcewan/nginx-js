@@ -1,0 +1,7 @@
+server {
+    root   /usr/share/nginx/html;
+    location / {
+      ssi on;
+      set $MY_MESSAGE ${MY_ENV_VAR};
+    }
+}
